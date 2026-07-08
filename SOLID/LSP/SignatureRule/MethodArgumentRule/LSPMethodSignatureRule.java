@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.LSP.SignatureRule.MethodArgumentRule;
 
 public class LSPMethodSignatureRule {
   

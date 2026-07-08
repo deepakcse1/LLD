@@ -1,4 +1,4 @@
-package SOLID;
+package SOLID.LSP;
 
 public class LiskovSubstitution {
   
