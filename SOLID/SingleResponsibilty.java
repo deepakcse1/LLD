@@ -89,7 +89,7 @@ class DatabaseSaver {
   }
 }
 
-class Main {
+class MainKart {
   public static void main(String[] args) {
 
     ShoppingCartSRP cart = new ShoppingCartSRP();
@@ -99,13 +99,13 @@ class Main {
         new Product("Keyboard", 2500));
 
     InvoicePrinter invoicePrinter = new InvoicePrinter(cart);
-    DatabaseSaver databaseSaver = new DatabaseSaver(cart);
+    // DatabaseSaver databaseSaver = new DatabaseSaver(cart);
 
     System.out.println("Total Price = " + cart.calculateTotalPrice());
 
     invoicePrinter.printInvoice();
 
-    databaseSaver.saveToDatabase();
+    // databaseSaver.saveToDatabase();
   }
 }
 
