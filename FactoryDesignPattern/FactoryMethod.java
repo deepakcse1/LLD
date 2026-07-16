@@ -3,6 +3,7 @@ package FactoryDesignPattern;
 public class FactoryMethod {
   
 }
+//------------------Burger Interface and Implementations--------------------
 interface Burger{
   void prepare();
 }
@@ -29,6 +30,7 @@ class WheetChickenBurger implements Burger{
 abstract class BurgerFactory{
   public abstract Burger getBurger(String type);
 }
+//------------------Factories--------------------
 class VegBurgerFactory extends BurgerFactory{
   public Burger getBurger(String type) {
     if(type.equalsIgnoreCase("Veg")) {
@@ -49,6 +51,7 @@ class ChickenBurgerFactory extends BurgerFactory{
     return null;
   }
 }
+//------------------Client--------------------
 class Restaurant{
   public static void main(String[] args) {
     BurgerFactory vegBurgerFactory = new VegBurgerFactory();
